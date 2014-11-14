@@ -3,10 +3,10 @@ layout:     post
 title:      "Dublês de Testes na prática - Test Spy"
 date:       2014-11-13 12:00:00
 author:     "Ismael Soares"
-header-img: "img/post-bg-05.jpg"
+header-img: "img/duble_spy.jpg"
 ---
 
-<span style="color: #6e6e6e;">No terceiro artigo desta série, dei exemplos de como utilizar os <a href="http://www.bluesoft.com.br/dubles-de-testes-na-pratica-stub/">dublês <span style="text-decoration: underline;">Stub e Sabotador</span></a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Test Spy.</span>
+<span style="color: #6e6e6e;">No terceiro artigo desta série, dei exemplos de como utilizar os <a href="http://rkmael.com/2014/11/13/dubles_testes-stub/">dublês <span style="text-decoration: underline;">Stub e Sabotador</span></a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Test Spy.</span>
 
 Como o próprio nome sugere, o Test Spy age durante a execução de um teste como um espião, capturando e armazenando as informações geradas pela unidade em teste para que sejam verificadas posteriormente. Assim, como um espião de verdade, o Test Spy não pode ser notado pela unidade em teste, ou seja, ele é totalmente passivo, não interage com nenhum outro objeto, apenas armazena o que lhe é passado. Para exemplificar o uso deste dublê, acompanhe o código abaixo:
 <script src="https://gist.github.com/rkmael/35ead5fc968368052443.js"></script>

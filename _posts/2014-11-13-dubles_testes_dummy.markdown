@@ -3,7 +3,7 @@ layout:     post
 title:      "Dublês de Testes na prática - Dummy Object"
 date:       2014-11-13 12:00:00
 author:     "Ismael Soares"
-header-img: "img/post-bg-05.jpg"
+header-img: "img/duble_dummy.jpg"
 ---
 <p>No primeiro artigo desta série, dei uma breve introdução dos Dublês de Testes (<a title="Dublês de Testes" href="http://rkmael.com/2014/11/13/dubles_testes/">http://rkmael.com/2014/11/13/dubles_testes/</a>). Neste artigo, vou demonstrar como aplicar esta técnica utilizando uma das variações: Dummy Object.</p>
 

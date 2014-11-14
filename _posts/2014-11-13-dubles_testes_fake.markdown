@@ -3,10 +3,10 @@ layout:     post
 title:      "Dublês de Testes na prática - Fake Object"
 date:       2014-11-13 12:00:00
 author:     "Ismael Soares"
-header-img: "img/post-bg-05.jpg"
+header-img: "img/duble_fake.png"
 ---
 
-<span style="color: #6e6e6e;">No terceiro artigo desta série, dei exemplos de como utilizar o <a href="http://www.bluesoft.com.br/dubles-de-testes-na-pratica-test-spy/">dublê Test Spy</a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Fake Object.</span>
+<span style="color: #6e6e6e;">No terceiro artigo desta série, dei exemplos de como utilizar o <a href="http://rkmael.com/2014/11/13/dubles_testes_spy/">dublê Test Spy</a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Fake Object.</span>
 
 O Fake Object é um tipo de dublê que substitui uma funcionalidade real por uma implementação alternativa, emulando assim o comportamento original com características amigáveis ao cenário testado.
 

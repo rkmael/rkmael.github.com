@@ -3,9 +3,9 @@ layout:     post
 title:      "Dublês de Testes na prática - Mock Object"
 date:       2014-11-13 12:00:00
 author:     "Ismael Soares"
-header-img: "img/post-bg-05.jpg"
+header-img: "img/duble_mock.jpg"
 ---
-<span style="color: #6e6e6e;">No quarto artigo desta série, dei exemplos de como utilizar o <a href="http://wp.me/p27qny-197">dublê Fake Object</a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Mock Object.</span>
+<span style="color: #6e6e6e;">No quarto artigo desta série, dei exemplos de como utilizar o <a href="http://rkmael.com/2014/11/13/dubles_testes_fake/">dublê Fake Object</a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Mock Object.</span>
 
 Este é o tipo de dublê mais conhecido pelos desenvolvedores. Isto se dá devido ao fato de Mock Object ser uma espécie de multiuso no que diz respeito a testes de unidade, ou seja, além de verificar as chamadas indiretas e prover os dados necessários para que o teste aconteça (sua função principal), ele ainda consegue reproduzir quase tudo o que os outros dublês fazem, com a vantagem de não precisar de uma implementação real, pois existem diversas ferramentas que já fazem este trabalho duro.
 
