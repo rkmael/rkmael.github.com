@@ -4,6 +4,8 @@ title:      "Comparando Dublês de Testes"
 date:       2014-11-17 08:05:00
 author:     "Ismael Soares"
 header-img: "img/compare-dubles.jpg"
+tags:
+- Testes
 ---
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

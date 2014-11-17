@@ -4,6 +4,8 @@ title:      "Dublês de Testes na prática - Test Spy"
 date:       2014-11-13 12:00:00
 author:     "Ismael Soares"
 header-img: "img/duble_spy.jpg"
+tags:
+- Testes
 ---
 
 <span style="color: #6e6e6e;">No terceiro artigo desta série, dei exemplos de como utilizar os <a href="http://rkmael.com/2014/11/13/dubles_testes-stub/">dublês <span style="text-decoration: underline;">Stub e Sabotador</span></a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Test Spy.</span>
