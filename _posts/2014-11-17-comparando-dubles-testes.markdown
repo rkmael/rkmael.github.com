@@ -128,3 +128,13 @@ Quando se estuda os dublês de teste, a primeira dúvida que vem à mente do des
 	</tbody>
 </table>
 
+###Conclusão
+<p>Como se pode notar, os Dublês de Teste permitem testar até mesmo classes que ainda não estão prontas ou sob nosso controle, acelerando a execução dos testes. Isso torna a escrita dos testes de unidade um processo natural, independente da implementação, possibilitando baixo acoplamento e maior coesão entre as classes. Além disto, possibilita a criação de um design evolutivo no sistema em desenvolvimento.
+Com as variações disponíveis dos dublês é possível criar testes de forma muito mais produtiva, e assim, o desenvolvedor pode aproveitar melhor o seu tempo para realizar refatorações, melhorias contínuas e a implementação de novas funcionalidades.</p>
+
+<p>Apesar de tratar-se de um assunto pouco comentado na comunidade de desenvolvimento de software, é quase impossível escrever bons testes de unidade sem utilizar Dublês de Testes. No entanto, nesta série de artigos tivemos a oportunidade de mostrar de forma prática, como utilizar cada um deles. Contudo, a muito mais assunto sobre a aplicação de cada um dos Dublês de Teste que podem ser encontradas nos links e livros aqui comentados.</p>
+
+<p style="color: #6e6e6e;">Se você gostou, compartilhe!</p>
+<p style="color: #6e6e6e;">Até breve e bom código!</p>
+
+
