@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog de Agilidade do Ismael Soares">
 
-    <title>Ismael Soares</title>
+    <title>Dublês de Testes na prática - Mock Object - Ismael Soares</title>
 
-    <link rel="canonical" href="http://rkmael.com/">
+    <link rel="canonical" href="http://rkmael.com/2014/11/13/dubles_testes-mock/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -103,99 +103,90 @@
 </nav>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/duble_mock.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Ismael Soares</h1>
-                    <hr class="small">
-                    <span class="subheading">Pensando Ágil</span>
+                <div class="post-heading">
+                    <h1>Dublês de Testes na prática - Mock Object</h1>
+                    
+                    <span class="meta">Posted by Ismael Soares on November 13, 2014</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-<div class="post-preview">
-    <a href="/2014/11/17/comparando-dubles-testes/">
-        <h2 class="post-title">
-            Comparando Dublês de Testes
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 17, 2014</p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-<div class="post-preview">
-    <a href="/2014/11/13/dubles_testes_spy/">
-        <h2 class="post-title">
-            Dublês de Testes na prática - Test Spy
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
-</div>
-<hr>
+				<p><span style="color: #6e6e6e;">No quarto artigo desta série, dei exemplos de como utilizar o <a href="http://rkmael.com/2014/11/13/dubles_testes_fake/">dublê Fake Object</a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Mock Object.</span></p>
 
-<div class="post-preview">
-    <a href="/2014/11/13/dubles_testes_fake/">
-        <h2 class="post-title">
-            Dublês de Testes na prática - Fake Object
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
-</div>
-<hr>
+<p>Este é o tipo de dublê mais conhecido pelos desenvolvedores. Isto se dá devido ao fato de Mock Object ser uma espécie de multiuso no que diz respeito a testes de unidade, ou seja, além de verificar as chamadas indiretas e prover os dados necessários para que o teste aconteça (sua função principal), ele ainda consegue reproduzir quase tudo o que os outros dublês fazem, com a vantagem de não precisar de uma implementação real, pois existem diversas ferramentas que já fazem este trabalho duro.</p>
 
-<div class="post-preview">
-    <a href="/2014/11/13/dubles_testes_dummy/">
-        <h2 class="post-title">
-            Dublês de Testes na prática - Dummy Object
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
-</div>
-<hr>
+<p>Para exemplificar melhor o uso deste dublê, considere o seguinte exemplo: suponha que um serviço de cadastrar cliente, ao atualizar as informações, precisa persisti-las no banco de dados e notificar o cliente via e-mail que a operação foi realizada com sucesso. No entanto, para realizar tal tarefa, este serviço depende de outros dois: <strong>EmailService</strong> e <strong>ClienteDao</strong>. O primeiro é responsável por enviar o e-mail, e o segundo por gravar os dados. Veja o código que executa esta tarefa na listagem abaixo:
+<script src="https://gist.github.com/rkmael/a5b0e9736cf75f73697b.js"></script>A listagem a seguir ilustra o teste do serviço que atualiza os dados do cliente (<strong>ClienteService</strong>):<script src="https://gist.github.com/rkmael/3aac3dc7a333fe9e7357.js"></script></p>
 
-<div class="post-preview">
-    <a href="/2014/11/13/dubles_testes-stub/">
-        <h2 class="post-title">
-            Dublês de Testes na prática - Test Stub
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
-</div>
-<hr>
+<p>O método <strong>deveAtualizarOCliente()</strong> – linha 16 – assegura que as responsabilidades estão sendo delegadas aos respectivos serviços corretamente  utilizando o método <strong>verify(), </strong>que confirma quantas vezes os comportamentos <strong>salvar()</strong> de <strong>ClienteDao</strong> e <strong>confirmarCadastro()</strong> de <strong>EmailService()</strong> foram chamados (linhas 25 e 26).</p>
+
+<p>Neste exemplo, além do JUnit4, está sendo utilizado o framework Mockito. Este possui o método <strong>mock()</strong>, que cria uma implementação falsa do objeto real (linhas 5 e 6). Entretanto, é necessário definir o seu comportamento. Por exemplo, antes de atualizar os dados do cliente, o serviço precisa saber se o mesmo já possui cadastro. Neste caso, quando o método <strong>obter()</strong> de <strong>ClienteDao</strong> for chamado, o dublê precisará saber o que retornar. Veja como definir um retorno para o Mock na linha 12. Com esta implementação, é possível determinar o que o método deve prover para a unidade em teste, um cliente.</p>
+
+<p>O dublê Mock só retorna o que foi previamente definido. Da mesma forma, ele só armazena as chamadas de métodos que estão sendo testadas. Por isso, nem sempre ele é a melhor opção, pois torna o código muito repetitivo.</p>
+<h3>Quer saber mais?</h3>
+<p style="color: #6e6e6e;">No próximo artigo desta série, veremos as comparações entre os 5 tipos de dublês.</p>
+<p style="color: #6e6e6e;">Até breve e bom código!</p>
 
 
-<!-- Pager -->
 
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/page2">Older Posts &rarr;</a>
-    </li>
-    
-</ul>
+                <div class="fb-like" data-href="http://rkmael.com/2014/11/13/dubles_testes-mock/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
 
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="rkmael">Tweet</a>
 
-		</div>
-	</div>
-</div>
+                <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+                
+                <hr>
+                   
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2014/11/13/dubles_testes/" data-toggle="tooltip" data-placement="top" title="Dublês de Testes">&larr; Previous Post</a> 
+                    </li>
+                     
+                    
+                    <li class="next">
+                        <a href="/2014/11/13/dubles_testes-stub/" data-toggle="tooltip" data-placement="top" title="Dublês de Testes na prática - Test Stub">Next Post &rarr;</a>
+                    </li>
+                     
+                </ul>
+
+            </div>
+        </div>
+  
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'rkmaelcom'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+</article>
 
 <hr>
+
+
 
     <!-- Footer -->
 <footer>

@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog de Agilidade do Ismael Soares">
 
-    <title>Ismael Soares</title>
+    <title>Dublês de Testes na prática - Dummy Object - Ismael Soares</title>
 
-    <link rel="canonical" href="http://rkmael.com/">
+    <link rel="canonical" href="http://rkmael.com/2014/11/13/dubles_testes_dummy/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -103,99 +103,104 @@
 </nav>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/duble_dummy.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Ismael Soares</h1>
-                    <hr class="small">
-                    <span class="subheading">Pensando Ágil</span>
+                <div class="post-heading">
+                    <h1>Dublês de Testes na prática - Dummy Object</h1>
+                    
+                    <span class="meta">Posted by Ismael Soares on November 13, 2014</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-<div class="post-preview">
-    <a href="/2014/11/17/comparando-dubles-testes/">
-        <h2 class="post-title">
-            Comparando Dublês de Testes
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 17, 2014</p>
-</div>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>No primeiro artigo desta série, dei uma breve introdução dos Dublês de Testes (<a title="Dublês de Testes" href="http://rkmael.com/2014/11/13/dubles_testes/">http://rkmael.com/2014/11/13/dubles_testes/</a>). Neste artigo, vou demonstrar como aplicar esta técnica utilizando uma das variações: Dummy Object.</p>
+
+<p>Este tipo de dublê é usado apenas para que a execução do teste seja possível, ou seja, não interage com a unidade testada, mas precisa existir para que o teste seja bem sucedido. A grande vantagem de utilizar este tipo de dublê é não precisar criar uma série de objetos que não serão testados. Observe abaixo.</p>
+
+<p><a href="http://labs.bluesoft.com.br/wp-content/uploads/2014/05/Dummy1.png"><img class="alignnone  wp-image-4070" alt="Dummy1" src="http://labs.bluesoft.com.br/wp-content/uploads/2014/05/Dummy1.png" width="650" /></a></p>
+
+<p>Neste exemplo, uma Nota Fiscal possui vários itens, e cada item está vinculado a um produto qualquer. Suponha que seja necessário testar o método que adiciona um item na nota e que o construtor da Nota Fiscal exija um <b>Cliente</b>, que precisa ter um <b>Endereço</b>, que precisa ter uma <b>Cidade</b>, que precisa ter um <b>Estado</b>. O objeto <b>Cliente</b> e suas dependências não são alvos do teste, mas sem eles não há como fazê-lo. Veja como ficaria o teste sem usar um dublê:</p>
+
+<script type="text/javascript" src="https://gist.github.com/rkmael/1c177ff15bccfcb7ed6a.js"></script>
+
+<p>O Dummy é usado justamente para evitar este tipo de desperdício de código. Um objeto Dummy nada mais é que uma classe parecida com a original, mas sem comportamento. Dessa maneira é possível criar objetos de uma forma mais simples e que não necessitam de ter todas as suas implementações e dependências, como o caso do objeto Cliente, que necessita do objeto Endereco que por sua vez precisa da Cidade e assim por diante. Para que isto, faz-se necessário criar uma interface que será implementada pela classe <b>Cliente</b> e pelo dublê que o substituirá. Veja a interface (<b>InterfaceCliente</b>) e as classes (<b>Cliente</b> e <b>ClienteDummy</b>):</p>
+
+<script type="text/javascript" src="https://gist.github.com/rkmael/64716dc0de48f3e3cf02.js"></script>
+
+<p>Com a interface sendo implementada pelo Dummy não será necessário criar todas as dependência da codificação real (<b>Endereco</b>, <b>Cidade</b> e <b>Estado</b>). Embora <b>Cliente</b><b>Dummy</b> substitua o objeto <b>Cliente</b>, ele não pode de maneira alguma ser chamado ou interagir com o teste. Se isto vier a acontecer, significa que ele não é o tipo de dublê indicado para o cenário em questão e o teste poderá ter um comportamento inesperado. Para garantir que esta interação não irá acontecer, nos métodos de <b>ClienteDummy</b> deve ser incluído um código que lança uma <b>RuntimeException</b> informando que algo de errado aconteceu. Veja como ficou o código de <b>ClienteDummy</b>:</p>
+
+<script type="text/javascript" src="https://gist.github.com/rkmael/8154e92111a2718e4d9e.js"></script>
+
+<p>Com o Dummy criado, não faz mais sentido preencher tantos objetos para testar o método <b>adicionaItem()</b> da Nota Fiscal.</p>
+
+<script src="https://gist.github.com/rkmael/dee11af809f4ee6947de.js"></script>
+
+<p>Repare que antes era necessário preencher quatro objetos inúteis ao teste (<b>Cliente</b>, <b>Endereco</b>, <b>Cidade</b> e <b>Estado</b>) e todos eles foram substituídos por um Dummy (<b>ClienteDummy</b>).</p>
+
+<h2>Quer saber mais?</h2>
+
+<p>No próximo artigo desta série, veremos exemplos de Test Stub e Spy.</p>
+
+<p>Até breve e bom código!</p>
+
+
+
+                <div class="fb-like" data-href="http://rkmael.com/2014/11/13/dubles_testes_dummy/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
+
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="rkmael">Tweet</a>
+
+                <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+                
+                <hr>
+                   
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2014/11/13/dubles_testes-stub/" data-toggle="tooltip" data-placement="top" title="Dublês de Testes na prática - Test Stub">&larr; Previous Post</a> 
+                    </li>
+                     
+                    
+                    <li class="next">
+                        <a href="/2014/11/13/dubles_testes_fake/" data-toggle="tooltip" data-placement="top" title="Dublês de Testes na prática - Fake Object">Next Post &rarr;</a>
+                    </li>
+                     
+                </ul>
+
+            </div>
+        </div>
+  
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'rkmaelcom'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+</article>
+
 <hr>
 
-<div class="post-preview">
-    <a href="/2014/11/13/dubles_testes_spy/">
-        <h2 class="post-title">
-            Dublês de Testes na prática - Test Spy
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
-</div>
-<hr>
 
-<div class="post-preview">
-    <a href="/2014/11/13/dubles_testes_fake/">
-        <h2 class="post-title">
-            Dublês de Testes na prática - Fake Object
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2014/11/13/dubles_testes_dummy/">
-        <h2 class="post-title">
-            Dublês de Testes na prática - Dummy Object
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2014/11/13/dubles_testes-stub/">
-        <h2 class="post-title">
-            Dublês de Testes na prática - Test Stub
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
-</div>
-<hr>
-
-
-<!-- Pager -->
-
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/page2">Older Posts &rarr;</a>
-    </li>
-    
-</ul>
-
-
-		</div>
-	</div>
-</div>
-
-<hr>
 
     <!-- Footer -->
 <footer>
