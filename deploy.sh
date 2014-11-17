@@ -1,0 +1,1 @@
+git pull && rake dist && git commit -am "update source" && git push && git checkout master && cp -rf dist/* ./ && git commit -am "update blog" && git push && git checkout source
