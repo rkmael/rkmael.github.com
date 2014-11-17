@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog de Agilidade do Ismael Soares">
 
-    <title>Dublês de Testes na prática - Fake Object - Ismael Soares</title>
+    <title>Gestão - Ismael Soares</title>
 
-    <link rel="canonical" href="http://rkmael.com/2014/11/13/dubles_testes_fake/">
+    <link rel="canonical" href="http://rkmael.com/tag/Gest%C3%A3o/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -107,99 +107,76 @@
 </nav>
 
 
-    <!-- Post Header -->
-<header class="intro-header" style="background-image: url('/img/duble_fake.png')">
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>Dublês de Testes na prática - Fake Object</h1>
-                    
-                    <span class="meta">Posted by Ismael Soares on November 13, 2014</span>
+                <div class="site-heading">
+                    <h1>Gestão</h1>
+                    <hr class="small">
+                    <span class="subheading"></span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<ul>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="post-preview">
+	    <a href="/2014/11/13/dubles_testes-mock/">
+	        <h4 class="post-title">
+	            Dublês de Testes na prática - Mock Object
+	        </h4>
+	        
+	    </a>
+	    <p class="post-meta">Posted by Ismael Soares on November 13, 2014</p>
+	</div>
+	<hr>
+	
+	
+	
+	
+	
+	
+	
+</ul>
 
-				<p><span style="color: #6e6e6e;">No terceiro artigo desta série, dei exemplos de como utilizar o <a href="http://rkmael.com/2014/11/13/dubles_testes_spy/">dublê Test Spy</a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Fake Object.</span></p>
 
-<p>O Fake Object é um tipo de dublê que substitui uma funcionalidade real por uma implementação alternativa, emulando assim o comportamento original com características amigáveis ao cenário testado.</p>
-
-<p>Ele é mais indicado em casos onde o comportamento real seja dependente de serviços externos. No entanto, se torna inviável em situações onde se precisa garantir interações. Isto porque o Fake Object não grava estado e muito menos armazena informações que garantam que ele foi chamado.
-Para exemplificar o uso deste dublê, observe o código da <strong>Listagem</strong><strong> abaixo:</strong>
-<script src="https://gist.github.com/rkmael/136852dea60631890d19.js"></script></p>
-
-<p>O método <strong>cancelar()</strong> do serviço <strong>NotaFiscalService</strong> basicamente grava o usuário que cancelou a nota fiscal. Entretanto, caso o usuário não tenha permissão para cancelar, o sistema deve retornar uma mensagem informando-o sobre o inconveniente. Note que a responsabilidade de saber quem está logado e quais as funções permitidas é do serviço <strong>Seguranca</strong>. Este, por sua vez, tem uma série de dependências que só estão disponíveis no ambiente de produção, o que significa que seu comportamento precisará ser dublado. Seguindo os mesmos moldes dos dublês anteriores, antes de criar o Fake Object será necessário definir uma interface para o serviço <strong>Seguranca</strong>.<script src="https://gist.github.com/rkmael/5e3e69a8c0c48acf0a39.js"></script></p>
-
-<p>Nesta interface devem ser criados os métodos usados na unidade de teste. Em seguida, cria-se uma nova classe implementando a interface definida. Observe o código da mesma na <strong>Listagem</strong><strong> abaixo:</strong>
-<script src="https://gist.github.com/rkmael/57d97a83dcd7c4c4f0c1.js"></script></p>
-
-<p>Com o serviço de segurança podendo ser reproduzido em ambiente de teste, ficou fácil testar o cancelamento da nota fiscal. Veja o código da classe de teste na <strong>Listagem abaixo:</strong><script src="https://gist.github.com/rkmael/9c68a55b16025b5245c2.js"></script></p>
-
-<p>O método <strong>setup()</strong> – linhas 7 a 12 – é responsável por instanciar os recursos compartilhados do teste. Note que ao criar o objeto <strong>NotaFiscalService</strong> (linha 11), está sendo passado por parâmetro o Fake Object para substituir o serviço <strong>Seguranca</strong>. Em seguida, a partir da linha 14, temos o método de teste <strong>deveRetornarUmaMensagemNegandoAPermissao()</strong>, que garante que uma mensagem será retornada em forma de exceção caso o usuário não tenha acesso para realizar a operação de cancelamento. Este teste só é possível porque, através do objeto <strong>segurancaFake</strong>, libera-se ou não a permissão para o usuário, como está sendo feito na linha 16. Já no teste <strong>devePermitirQueOUsuarioConfiraAEscritaFiscal()</strong>, a permissão é liberada para garantir que o usuário logado seja incluído como cancelador da nota fiscal informada.</p>
-
-<h3>Quer saber mais?</h3>
-
-<p style="color: #6e6e6e;">No próximo artigo desta série, veremos exemplos de Mock Object.</p>
-
-<p style="color: #6e6e6e;">Até breve e bom código!</p>
-
-<p><span style="color: #6e6e6e;"> </span></p>
-
-
-
-                <div class="fb-like" data-href="http://rkmael.com/2014/11/13/dubles_testes_fake/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
-
-                <a href="https://twitter.com/share" class="twitter-share-button" data-via="rkmael">Tweet</a>
-
-                <div class="g-plusone" data-annotation="inline" data-width="300"></div>
-                
-                <hr>
-                   
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/2014/11/13/dubles_testes_dummy/" data-toggle="tooltip" data-placement="top" title="Dublês de Testes na prática - Dummy Object">&larr; Previous Post</a> 
-                    </li>
-                     
-                    
-                    <li class="next">
-                        <a href="/2014/11/13/dubles_testes_spy/" data-toggle="tooltip" data-placement="top" title="Dublês de Testes na prática - Test Spy">Next Post &rarr;</a>
-                    </li>
-                     
-                </ul>
-
-            </div>
-        </div>
-  
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'rkmaelcom'; // required: replace example with your forum shortname
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
-
-</article>
+		</div>
+	</div>
+</div>
 
 <hr>
-
-
 
     <!-- Footer -->
 <footer>
