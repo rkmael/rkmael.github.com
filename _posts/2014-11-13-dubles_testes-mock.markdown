@@ -6,7 +6,6 @@ author:     "Ismael Soares"
 header-img: "img/duble_mock.jpg"
 tags:
 - Testes
-- Talks
 ---
 <span style="color: #6e6e6e;">No quarto artigo desta série, dei exemplos de como utilizar o <a href="http://rkmael.com/2014/11/13/dubles_testes_fake/">dublê Fake Object</a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Mock Object.</span>
 
