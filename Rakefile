@@ -17,7 +17,7 @@ end
 
 task :deploy do
 	puts '## Deploying blog'
-	system 'git pull && git add . && git commit -am "update source" && git push && git checkout master && cp -rf _site/* ./ && git add . && git commit -am "update blog" && git push && git checkout source'
+	system 'git pull && rake build && git add . && git commit -am "update source" && git push && git checkout master && cp -rf _site/* ./ && git add . && git commit -am "update blog" && git push && git checkout source'
 end
 
 task :new_post do
