@@ -1,4 +1,4 @@
-class YouTube < Liquid::Tag
+class Vimeo < Liquid::Tag
   Syntax = /^\s*([^\s]+)(\s+(\d+)\s+(\d+)\s*)?/
 
   def initialize(tagName, markup, tokens)
@@ -15,13 +15,13 @@ class YouTube < Liquid::Tag
           @height = $3.to_i
       end
     else
-      raise "No YouTube ID provided in the \"youtube\" tag"
+      raise "No Vimeo ID provided in the \"vimeo\" tag"
     end
   end
 
   def render(context)
-    "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"http://www.youtube.com/embed/#{@id}?color=white&theme=light\"></iframe>"
+    "<iframe src=\"//player.vimeo.com/video/#{@id}\" width=\"#{@width}\" height=\"#{@height}\" frameborder=\"0\"></iframe>"
   end
 
-  Liquid::Template.register_tag "youtube", self
+  Liquid::Template.register_tag "vimeo", self
 end

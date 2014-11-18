@@ -13,7 +13,7 @@ Você verá também:
 – Como o XP encara as necessidades dos clientes
 – Design Simples alinhado aos Valores do XP
 
-<iframe src="//player.vimeo.com/video/107701169" width="560" height="420" frameborder="0" title="Papo Reto: &quot;Design simples com XP&quot;, por Ismael Soares" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+{% vimeo 107701169 %}
 
-<iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src="//www.slideshare.net/slideshow/embed_code/39539882" width="560" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
+{% slideshare 39539882 %} 
 <br>
