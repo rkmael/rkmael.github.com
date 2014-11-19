@@ -4,7 +4,7 @@ title: "Habilidades Sensoriais Em Equipes Auto-Organizáveis"
 date: 2014-11-18 09:10:57
 header-img: "img/habilidade-sensorial.jpg"
 tags:
-- Talks
+- Gestão
 ---
 Nesta apresentação Ismael Soares volta a falar de equipes Auto-Organizáveis.
 

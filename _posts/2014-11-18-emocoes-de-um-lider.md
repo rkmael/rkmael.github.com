@@ -4,7 +4,7 @@ title: "Emoções de um Líder"
 date: 2014-11-18 08:11:28
 header-img: "img/emocoes_lider.jpg"
 tags:
-- Talks 
+- Gestão 
 ---
 Neste Papo Reto Ismael Soares fala como um time pode ser influenciado pelas emoções de seu líder.
 

@@ -4,7 +4,7 @@ title: "Design Simples"
 date: 2014-11-18 08:10:28
 header-img: "img/design-simples.jpg"
 tags:
-- Talks 
+- Tech talks
 ---
 Nesta apresentação, Ismael Soares fala a equipe Bluesoft a importância de pensar em um design simples ao desenvolver uma solução visando agregar valor ao cliente.
 
