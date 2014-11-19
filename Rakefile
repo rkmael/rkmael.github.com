@@ -28,7 +28,7 @@ task :new_post do
 	file_name = time.strftime('%Y-%m-%d')+"-#{post_name}.md"
 	path = "_posts/#{file_name}"
 	
-	content = "---\nlayout: post\ntitle: \"#{title}\" \ndate: #{post_date}\ncategories: \n---"
+	content = "---\nlayout: post\ntitle: \"#{title}\" \ndate: #{post_date}\ntags: \n- \n---"
 	
 	File.open(path, 'w+') do |f| 
 		f.write(content)
