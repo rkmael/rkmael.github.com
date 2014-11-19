@@ -5,7 +5,7 @@ date:       2014-11-13 12:00:00
 author:     "Ismael Soares"
 header-img: "img/duble_fake.png"
 tags:
-- Testes
+- TDD
 ---
 
 <span style="color: #6e6e6e;">No terceiro artigo desta série, dei exemplos de como utilizar o <a href="http://rkmael.com/2014/11/13/dubles_testes_spy/">dublê Test Spy</a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Fake Object.</span>

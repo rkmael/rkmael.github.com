@@ -5,7 +5,7 @@ date:       2014-11-13 12:00:00
 author:     "Ismael Soares"
 header-img: "img/duble_stub.jpg"
 tags:
-- Testes
+- TDD
 ---
 
 No segundo artigo desta série, dei um exemplo de como utilizar o dublê <a href="http://rkmael.com/2014/11/13/dubles_testes_dummy/" target="_blank">Dummy Object</a>. Neste artigo, vou demonstrar como usar o dublê Test Stub.

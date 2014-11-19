@@ -5,7 +5,7 @@ date:       2014-11-13 12:00:00
 author:     "Ismael Soares"
 header-img: "img/post-bg-05.jpg"
 tags:
-- Testes
+- TDD
 ---
 
 <span style="line-height: 1.6;">Em um software, as classes dificilmente funcionam isoladamente e frequentemente se comunicam com outros elementos da aplicação. Quando construímos um </span><a style="line-height: 1.6;" href="http://improveit.com.br/xp/praticas/tdd">teste de unidade</a><span style="line-height: 1.6;">, um dos principais desafios é exatamente isolar a classe que está sendo testada para garantir o seu comportamento.</span>
