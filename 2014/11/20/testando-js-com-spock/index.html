@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog de Agilidade do Ismael Soares">
 
-    <title>Dublês de Testes na prática - Test Spy - Ismael Soares</title>
+    <title>Testando JS com Spock - Ismael Soares</title>
 
-    <link rel="canonical" href="http://rkmael.com/2014/11/13/dubles_testes_spy/">
+    <link rel="canonical" href="http://rkmael.com/2014/11/20/testando-js-com-spock/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -120,14 +120,14 @@
 
 
     <!-- Post Header -->
-<header class="intro-header" style="background-image: url('/img/duble_spy.jpg')">
+<header class="intro-header" style="background-image: url('/img/spock.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Dublês de Testes na prática - Test Spy</h1>
+                    <h1>Testando JS com Spock</h1>
                     
-                    <span class="meta">Posted by Ismael Soares on November 13, 2014</span>
+                    <span class="meta">Posted by  on November 20, 2014</span>
                 </div>
             </div>
         </div>
@@ -140,29 +140,23 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-				<p><span style="color: #6e6e6e;">No terceiro artigo desta série, dei exemplos de como utilizar os <a href="http://rkmael.com/2014/11/13/dubles_testes-stub/">dublês <span style="text-decoration: underline;">Stub e Sabotador</span></a></span><span style="color: #6e6e6e;">. Neste artigo, vou demonstrar como usar o dublê Test Spy.</span></p>
+				<p>Nesta palestra Ismael Soares apresenta a equipe da Bluesoft uma maneira simples de testar JavaScript com Spock (framework de BDD). Veja também:</p>
 
-<p>Como o próprio nome sugere, o Test Spy age durante a execução de um teste como um espião, capturando e armazenando as informações geradas pela unidade em teste para que sejam verificadas posteriormente. Assim, como um espião de verdade, o Test Spy não pode ser notado pela unidade em teste, ou seja, ele é totalmente passivo, não interage com nenhum outro objeto, apenas armazena o que lhe é passado. Para exemplificar o uso deste dublê, acompanhe o código abaixo:
-<script src="https://gist.github.com/rkmael/35ead5fc968368052443.js"></script></p>
+<pre><code>- O que é o Nashorn;
+- ScriptEngine;
+- Testando com tabela de dados usando @Unroll;
+- Testando Callback;
+- Verificando Interactions.
+</code></pre>
 
-<p>Suponha que um serviço de e-mail de um sistema qualquer notifique um determinado usuário sempre que uma nota fiscal for cancelada na Secretaria da Fazenda. Este e-mail é gerado dinamicamente de acordo com as informações da nota fiscal. Para testar este comportamento de maneira eficiente, é preciso garantir que os dados enviados no e-mail estejam corretos. Neste caso, faz-se necessário o uso de um Test Spy para capturar estes dados.</p>
+<iframe src="//player.vimeo.com/video/97525243" width="560" height="420" frameborder="0"></iframe>
 
-<h3>Criando um Test Spy</h3>
-
-<p>Existem duas formas de se criar um Test Spy. A primeira delas é através de uma interface com os métodos comuns ao objeto real e ao dublê. A segunda forma é mais simples, bastando criar uma nova classe e estender a classe real fazendo “override” dos métodos envolvidos no teste. No entanto, caso opte pela segunda opção, tenha em mente que todos os demais métodos da classe real que não forem reescritos continuarão com o comportamento original. Leve este fato em conta quando for criar o dublê, pois, caso contrário, o resultado do teste pode ser totalmente diferente do esperado. Para este exemplo, dada a sua simplicidade, usaremos a segunda forma. Veja como fazer isto no código a seguir:<script src="https://gist.github.com/rkmael/2ff4cf4150777236b285.js"></script>
-<script src="https://gist.github.com/rkmael/8ba6808d7a939044decc.js"></script></p>
-
-<p>O código acima mostra como testar o envio do e-mail. Note que no lugar do serviço de e-mail real foi informado o <strong>mailServiceSpy</strong> criado anteriormente (linha 9). Este dublê irá armazenar os dados gerados dinamicamente durante a execução do teste <strong>deveNotificarOCancelamentoDaNotaFiscalViaEMail()</strong> (linha 15) para que seja possível verificar se a mensagem enviada está de acordo com o que é esperado (linhas 18 a 22).</p>
-
-<h3>Quer saber mais?</h3>
-
-<p style="color: #6e6e6e;">No próximo artigo desta série, veremos exemplos de Test Fake.</p>
-
-<p style="color: #6e6e6e;">Até breve e bom código!</p>
+<iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src="//www.slideshare.net/slideshow/embed_code/35694434" width="560" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
+<p><br /></p>
 
 
 
-                <div class="fb-like" data-href="http://rkmael.com/2014/11/13/dubles_testes_spy/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
+                <div class="fb-like" data-href="http://rkmael.com/2014/11/20/testando-js-com-spock/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
 
                 <a href="https://twitter.com/share" class="twitter-share-button" data-via="rkmael">Tweet</a>
 
@@ -173,13 +167,9 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2014/11/13/dubles_testes_fake/" data-toggle="tooltip" data-placement="top" title="Dublês de Testes na prática - Fake Object">&larr; Previous Post</a> 
+                        <a href="/2014/11/19/easytest/" data-toggle="tooltip" data-placement="top" title="EasyTest">&larr; Previous Post</a> 
                     </li>
                      
-                    
-                    <li class="next">
-                        <a href="/2014/11/17/comparando-dubles-testes/" data-toggle="tooltip" data-placement="top" title="Comparando Dublês de Testes">Next Post &rarr;</a>
-                    </li>
                      
                 </ul>
 
