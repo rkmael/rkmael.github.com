@@ -6,7 +6,7 @@ header-img: "img/spock.jpg"
 tags: 
 - Tech talks
 ---
-Nessa apresentação Ismael Soares dá continuação ao tema sobre Spock Framework, e dessa vez aborda interações.
+Nessa palestra Ismael Soares dá continuação ao tema sobre Spock Framework, e dessa vez aborda interações.
 
 {% vimeo 19270063 %}
 
