@@ -12,7 +12,7 @@ facebook_username: ismael.soares.351
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
-paginate: 5
+paginate: 10
 exclude: ["node_modules"]
 comments: true
 gems:
