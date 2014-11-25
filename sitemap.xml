@@ -92,20 +92,44 @@
   </url>
   <url>
     <loc>http://rkmael.com/about/</loc>
-    <lastmod>2014-11-24T14:03:04-02:00</lastmod>
+    <lastmod>2014-11-25T08:54:00-02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://rkmael.com/contact/</loc>
-    <lastmod>2014-11-24T14:03:04-02:00</lastmod>
+    <lastmod>2014-11-25T08:54:00-02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://rkmael.com/</loc>
-    <lastmod>2014-11-24T14:03:04-02:00</lastmod>
+    <lastmod>2014-11-25T08:54:00-02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://rkmael.com/tag/TDD/</loc>
+    <lastmod>2014-11-25T08:54:00-02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://rkmael.com/tag/Tech%20talks/</loc>
+    <lastmod>2014-11-25T08:54:00-02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://rkmael.com/tag/Gest%C3%A3o/</loc>
+    <lastmod>2014-11-25T08:54:00-02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://rkmael.com/tag/Banco%20de%20dados/</loc>
+    <lastmod>2014-11-25T08:54:00-02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
