@@ -8,7 +8,7 @@ tags:
 ---
 Nessa apresentação, Ismael Soares, fala a equipe a Bluesoft sobre PL/SQL.
 
-Introdução a PLSQL é um resumo das principais funcionalidades e opções que há na linguagem para Banco de dados Oracle.
+Introdução a PL/SQL é um resumo das principais funcionalidades e opções que há na linguagem para Banco de dados Oracle.
 
 {% vimeo 69892499 %}
 
