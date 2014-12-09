@@ -72,7 +72,7 @@ Inspire a lealdade da sua equipe ao dar elogios quando estes são merecidos. Apr
 <h2>Teste sua inteligência emocional</h2>
 Você pode testar como está em cada uma das competêncis citadas acima <a href="http://portaldalideranca.sapo.pt/arquivo/inquerito/descubra-o-seu-nivel-de-inteligencia-emocional">clicando aqui</a>. 
 
-Assita apresentação que fiz à equipe da <a href="http://labs.bluesoft.com.br/">Bluesoft:</a>
+Assista apresentação que fiz à equipe da <a href="http://labs.bluesoft.com.br/">Bluesoft:</a>
 
 {% vimeo 113403954 %}
 
