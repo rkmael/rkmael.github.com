@@ -70,7 +70,7 @@ Quando alguém vier conversar com você sobre algum problema pessoal. Escute-o, 
 Inspire a lealdade da sua equipe ao dar elogios quando estes são merecidos. Aprender a dar elogios eficazmente é uma arte que vale bem a pena dominar.
 
 <h2>Teste sua inteligência emocional</h2>
-Você pode testar como está em cada uma das competêncis citadas acima <a href="http://portaldalideranca.sapo.pt/arquivo/inquerito/descubra-o-seu-nivel-de-inteligencia-emocional">clicando aqui</a>. 
+Você pode testar como está em cada uma das competências citadas acima <a href="http://portaldalideranca.sapo.pt/arquivo/inquerito/descubra-o-seu-nivel-de-inteligencia-emocional">clicando aqui</a>. 
 
 Assista apresentação que fiz à equipe da <a href="http://labs.bluesoft.com.br/">Bluesoft:</a>
 
