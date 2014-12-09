@@ -31,7 +31,7 @@ Manter a calma em momentos de frustações ou fortes emoções não é nada fác
 “Os líderes que conseguem se controlar eficazmente, raramente atacam os outros verbalmente, tomam decisões apressadas ou emocionais, estereotipam as pessoas ou comprometem os seus valores. O autocontrole tem tudo a ver com estar sempre no controle"
 
 <h4>Conheça seus valores</h4>
-Já parou para pensar em quais os valores mais importantes para você? Tem ideia de onde não estaria disposto a comprometer-se? Possui um "código de ética"? Se as respostas forem NÃO, então você precisar refletir sobre isto. Gaste um tempo escrevendo seus valores. Procure coisas que façam sentido para você e não apenas para os outros.
+Já parou para pensar quais os valores mais importantes para você? Tem ideia de onde não estaria disposto a comprometer-se? Possui um "código de ética"? Se as respostas forem NÃO, então você precisar refletir sobre isto. Gaste um tempo escrevendo seus valores. Procure coisas que façam sentido para você e não apenas para os outros.
 
 <h4>Responsabilize-se</h4>  
 Não culpe os outros quando algo der errado. Assuma os erros e enfrente as consequências. Isto irá te ajudar a conquistar o respeito das pessoas que o rodeiam.  
