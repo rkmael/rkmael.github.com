@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tempo para refletir" 
+title: "Você precisa de Tempo para Refletir" 
 date: 2015-01-15 08:01:24 
 header-img: "img/pensador.jpg" 
 tags: 
