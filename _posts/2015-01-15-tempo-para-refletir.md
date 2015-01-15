@@ -6,7 +6,7 @@ header-img: "img/pensador.jpg"
 tags: 
 - Gestão
 ---
-Recentemente, o renomado escritor americado Daniel Goleman publicou seu livro Foco (2014). Goleman se tornou bastante conhecido depois que publicou o livro Inteligência Emocional (1995) que já vendeu mais de 5 milhões de cópias no mundo.
+Recentemente, o renomado escritor americado Daniel Goleman publicou seu livro Foco (2014). Ele se tornou bastante conhecido depois que publicou o livro Inteligência Emocional (1995) que já vendeu mais de 5 milhões de cópias no mundo.
 
 <a href="#">
     <img class="img-responsive" src="{{ site.baseurl }}/img/daniel-goleman.jpg" alt="">
@@ -14,7 +14,7 @@ Recentemente, o renomado escritor americado Daniel Goleman publicou seu livro Fo
 
 Goleman afirma que o excesso de informação no mundo atual gera distrações e atrapalha na concentração das pessoas. Ele diz que é preciso parar para refletir nas coisas que estão acontecendo ao nosso redor para nos tornamos mais eficiêntes e produtivos. 
 
-Fazendo um paralelo disto com <a href="http://www.casadocodigo.com.br/products/livro-agile">Agile</a>, notamos que Goleman está dizendo mais ou menos o seguinte: Para ter melhoria contínua em todas as áreas da nossa vida é preciso reservar um tempo com uma certa periodicidade para fazermos retrospectivas e criarmos ações. 
+Fazendo um paralelo disto com <a href="http://www.casadocodigo.com.br/products/livro-agile">Agile</a>, notamos que o escritor está dizendo é mais ou menos o seguinte: Para ter melhoria contínua em todas as áreas da nossa vida é preciso reservar um tempo com uma certa periodicidade para fazermos retrospectivas e criarmos ações. 
 
 É o que Bill Gates fazia quando presidia a Microsoft. Ele tinha períodos  de "think weeks" (semanas para pensar), onde ele passava alguns dias numa casa de campo para refletir. 
 
