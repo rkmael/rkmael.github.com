@@ -6,7 +6,7 @@ header-img: "img/pensador.jpg"
 tags: 
 - Gestão
 ---
-Recentemente, o renomado escritor americado Daniel Goleman publicou seu livro Foco (2014). Ele se tornou bastante conhecido depois que publicou o livro Inteligência Emocional (1995) que já vendeu mais de 5 milhões de cópias no mundo.
+Recentemente, o renomado escritor americano Daniel Goleman publicou seu livro Foco (2014). Ele se tornou bastante conhecido depois que publicou o livro Inteligência Emocional (1995) que já vendeu mais de 5 milhões de cópias no mundo.
 
 <a href="#">
     <img class="img-responsive" src="{{ site.baseurl }}/img/daniel-goleman.jpg" alt="">
