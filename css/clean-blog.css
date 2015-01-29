@@ -41,7 +41,8 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  background: white;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
