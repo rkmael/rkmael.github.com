@@ -6,7 +6,6 @@ header-img: "img/meta.jpg"
 tags: 
 - Gestão
 ---
-
 Você sabe quais são os objetivos da sua empresa a longo e curto prazo? Estes objetivos estão claros na mente do time? Não? Então você deveria ler este post.
 
 Costumo pensar que quem não tem objetivos ou metas claras não chega a lugar algum porque qualquer coisa serve. No entanto, isto não funciona para uma empresa que quer se destacar em um mercado cada vez mais competitivo. Não sou diretor, gerente ou CTO/CPO da empresa onde trabalho. Sou líder de um time ágil. Então por que estou preocupado com isto? Simples, porque faço parte disto. A cada Sprint pegamos uma série de problemas para resolver. A solução destes problemas fazem parte de uma estratégia que irá nos colocar cada vez mais próximo do objetivo final. 
