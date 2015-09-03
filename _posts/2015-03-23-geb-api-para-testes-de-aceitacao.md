@@ -4,7 +4,7 @@ title: "Geb - API para Testes de Aceitação"
 date: 2015-03-23 08:03:17 
 header-img: "img/programacao.jpg" 
 tags: 
-- 
+- Tech talks
 ---
 Se você é desenvolvedor Java/Groovy e procura uma solução para automatizar seus testes de aceitação, Geb é uma ótima solução para você.
 
