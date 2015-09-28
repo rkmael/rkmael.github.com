@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Olá seja bem vindo ao blog do Ismael Soares. Compartilho aqui meus estudos sobre TDD, BDD, Tech Talks, Gestão, Banco de dados e meus pensamentos ágeis.">
 
-    <title>Como voce testa seu software? - Ismael Soares</title>
+    <title>Refactoring Databases - Ismael Soares</title>
 
-    <link rel="canonical" href="http://rkmael.com/2015/09/04/como-voce-testa-seu-software/">
+    <link rel="canonical" href="http://rkmael.com/2015/09/28/refactoring-databases/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -124,14 +124,14 @@
 
 
     <!-- Post Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+<header class="intro-header" style="background-image: url('/img/tables-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Como voce testa seu software?</h1>
+                    <h1>Refactoring Databases</h1>
                     
-                    <span class="meta">Posted by  on September 4, 2015</span>
+                    <span class="meta">Posted by  on September 28, 2015</span>
                 </div>
             </div>
         </div>
@@ -144,27 +144,51 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
 
-				<p>Neste Papo Reto Ismael Soares fala sobre testes e apresenta 8 motivos (erros) de testes de software.</p>
+				<p>Neste Papo Reto Ismael Soares fala sobre algumas técnicas para refatorar o Banco de Dados.(Refactoring Databases)</p>
 
-<p>Estamos em uma era em que todos os dias nascem softwares para tudo e para todos dispositivos.</p>
+<p>Quanto vale a informação? Com o avanço tecnológico, esta pergunta ganhou um lugar importante no cenário de negócios corporativos atual. Por este motivo, apenas ter as informações armazenados numa base de dados não é suficiente. É preciso garantir qualidade.</p>
 
-<p>O que não pode ser esquecido é que um software, além de ser bonito deve funcionar de forma perfeita ou significará prejuízo para a empresa, ou seja, muitas vezes vale mais a pena ter um software feio porém funcional.</p>
+<p>Para melhor compreendermos o que pode ser refatorado em um esquema de banco de dados, considere as seis principais categorias de refactoring:</p>
 
-<p>Com isso em mente, pode-se dizer que o principal erro dos desenvolvedores e empresas de software é não testar ou não ter uma equipe de teste apropriada.</p>
+<ul>
+  <li>
+    <p>Estrutural: mudanças em estruturas de tabelas e/ou views.</p>
+  </li>
+  <li>
+    <p>Qualidade dos dados: melhora na qualidade da informação, por exemplo, fazendo uma coluna não-nula para garantir que sempre contenha valores.</p>
+  </li>
+  <li>
+    <p>Integridade referencial: mudanças para garantir a integridade dos dados, por exemplo, adicionando chaves estrangeiras e/ou triggers.</p>
+  </li>
+  <li>
+    <p>Arquitetura: Mudança que melhora a forma global que programas externos interagem com um banco de dados, por exemplo, substituindo uma operação Java existente, em uma biblioteca, por uma stored procedure armazenada no banco de dados.</p>
+  </li>
+  <li>
+    <p>Métodos: Mudança que melhora a qualidade de métodos, por exemplo, renomeando um procedimento armazenado para torná-lo mais fácil de entender.</p>
+  </li>
+  <li>
+    <p>Transformação sem refactoring: Mudança no esquema de banco de dados que muda a semântica, por exemplo, adicionar uma coluna numa tabela existente.
+<br /></p>
+  </li>
+</ul>
 
-<p>Confira Ismael falando sobre 8 erros em teste de software que você não pode (mais) cometer.</p>
+<h2>Parte 1</h2>
 
-<p>E aí? Como você testa o seu software?</p>
+<iframe width="560" height="420" src="http://www.youtube.com/embed/27phqgF6uxI?color=white&amp;theme=light"></iframe>
 
-<iframe width="560" height="420" src="http://www.youtube.com/embed/Ln8MrzqXwRM?color=white&amp;theme=light"></iframe>
+<iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src="//www.slideshare.net/slideshow/embed_code/52400960" width="560" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
+<p><br /></p>
 
-<iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src="//www.slideshare.net/slideshow/embed_code/51603690" width="560" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
+<h2>Parte 2</h2>
+<iframe width="560" height="420" src="http://www.youtube.com/embed/zGzhV5o6jwo?color=white&amp;theme=light"></iframe>
+
+<iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src="//www.slideshare.net/slideshow/embed_code/53272896" width="560" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
 <p><br /></p>
 
 
 
 
-                <div class="fb-like" data-href="http://rkmael.com/2015/09/04/como-voce-testa-seu-software/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
+                <div class="fb-like" data-href="http://rkmael.com/2015/09/28/refactoring-databases/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
 
                 <a href="https://twitter.com/share" class="twitter-share-button" data-via="rkmael">Tweet</a>
 
@@ -175,13 +199,9 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2015/09/03/just-groovy/" data-toggle="tooltip" data-placement="top" title="Just Groovy">&larr; Previous Post</a> 
+                        <a href="/2015/09/04/inove-suas-retrospectivas/" data-toggle="tooltip" data-placement="top" title="Inove suas Retrospectivas">&larr; Previous Post</a> 
                     </li>
                      
-                    
-                    <li class="next">
-                        <a href="/2015/09/04/inove-suas-retrospectivas/" data-toggle="tooltip" data-placement="top" title="Inove suas Retrospectivas">Next Post &rarr;</a>
-                    </li>
                      
                 </ul>
 
