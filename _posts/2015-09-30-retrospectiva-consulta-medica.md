@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Retrospectiva Consulta Médica" 
+title: "Retrospectiva - Consulta Médica" 
 date: 2015-09-30 08:09:31 
 header-img: "img/medico.jpg" 
 tags: 
