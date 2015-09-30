@@ -17,7 +17,7 @@ tags:
  * Serão 4 etapas de 10 minutos, sendo 5 para o time escrever e 5 para você ler o que foi escrito.
 
 
-<h2>Etapa 1: Avaliando os tratamentos passados</h2>
+<h2>Etapa 1: Avaliando os tratamentos anteriores</h2>
 <p>Na primeira etapa, o médico diria: <strong>"Os rémedios que receitei a você, surtiram efeito? Você se sente melhor?"</strong></p>
 <p> Neste ponto, o time deve escrever se as ações decididas na última retrospectiva foram executadas e qual foi o resultado. Na minha opinião, se nenhuma das ações foram executadas, não há motivos para fazer outra retrospectiva. Deveria usar este tempo para executa-las, mas esta é apenas a minha opinião.</p>
 
@@ -31,8 +31,12 @@ tags:
 
 <h2>Etapa 4: Escolhendo o melhor tratamento</h2>
 <p><strong>"Qual tratamento você quer optar?"</strong></p> 
-<p>Você já deve ter passado por algum tratamento onde o médico te receitou 2 folhas de remédios com possologias variadas e mais uns 10 exames. Bem não precisa responder, mas você fez tudo certinho? Acredito que não. Então não adianta o time sair com 10 ou 15 ações da restrospectiva e não fazer nenhuma. Na minha opinião, no máximo 3 são o bastante.</p>
+<p>Você já deve ter passado por algum tratamento onde o médico te receitou 2 folhas de remédios com possologias variadas e mais uns 10 exames. Bem, não precisa responder, mas você fez tudo certinho? Acredito que não. Então não adianta o time sair com 10 ou 15 ações da restrospectiva e não fazer nenhuma. Na minha opinião, no máximo 3 são o bastante.</p>
 <p>Esta etapa deve levar os 10 minutos finais (ou mais se você optar). Cada membro do time tem 3 votos para dar em quais ações ele considera indispensável. Em seguida, selecione as 3 mais votadas e nomeie responsáveis para cada uma delas.</p>
 
 <p>Boa sorte!</p>
+
+<a href="#">
+    <img class="img-responsive" src="{{ site.baseurl }}/img/img_retro_consulta_med.jpg" alt="">
+</a>
 
