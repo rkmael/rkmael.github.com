@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Olá seja bem vindo ao blog do Ismael Soares. Compartilho aqui meus estudos sobre TDD, BDD, Tech Talks, Gestão, Banco de dados e meus pensamentos ágeis.">
 
-    <title>Refactoring Databases - Ismael Soares</title>
+    <title>Retrospectiva Consulta Médica - Ismael Soares</title>
 
-    <link rel="canonical" href="http://rkmael.com/2015/09/28/refactoring-databases/">
+    <link rel="canonical" href="http://rkmael.com/2015/09/30/retrospectiva-consulta-medica/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -124,14 +124,14 @@
 
 
     <!-- Post Header -->
-<header class="intro-header" style="background-image: url('/img/tables-bg.jpg')">
+<header class="intro-header" style="background-image: url('/img/medico.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Refactoring Databases</h1>
+                    <h1>Retrospectiva Consulta Médica</h1>
                     
-                    <span class="meta">Posted by  on September 28, 2015</span>
+                    <span class="meta">Posted by  on September 30, 2015</span>
                 </div>
             </div>
         </div>
@@ -144,51 +144,41 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
 
-				<p>Neste Papo Reto Ismael Soares fala sobre algumas técnicas para refatorar o Banco de Dados.(Refactoring Databases)</p>
+				<p>Recentemente eu fiz uma <a href="http://rkmael.com/2015/09/04/inove-suas-retrospectivas/">apresentação</a> falando porque os times ágeis devem inovar em suas retrospectivas.</p>
+<p>Quero compartilhar com vocês uma dinâmica que rodei em dois times na <a href="http://bluesoft.com.br/carreiras/">Bluesoft.</a></p>
+<p>O contexto é o retorno de uma consulta médica durante um tratamento de uma doença. No entanto, o médico ainda não sabe qual é a doença. Desta forma, ele está tratatando os sintomas e fazendo exames para descrobir a raiz do problema.</p>
 
-<p>Quanto vale a informação? Com o avanço tecnológico, esta pergunta ganhou um lugar importante no cenário de negócios corporativos atual. Por este motivo, apenas ter as informações armazenados numa base de dados não é suficiente. É preciso garantir qualidade.</p>
-
-<p>Para melhor compreendermos o que pode ser refatorado em um esquema de banco de dados, considere as seis principais categorias de refactoring:</p>
-
+<h2>Para esta restrospectiva você vai precisar</h2>
 <ul>
-  <li>
-    <p>Estrutural: mudanças em estruturas de tabelas e/ou views.</p>
-  </li>
-  <li>
-    <p>Qualidade dos dados: melhora na qualidade da informação, por exemplo, fazendo uma coluna não-nula para garantir que sempre contenha valores.</p>
-  </li>
-  <li>
-    <p>Integridade referencial: mudanças para garantir a integridade dos dados, por exemplo, adicionando chaves estrangeiras e/ou triggers.</p>
-  </li>
-  <li>
-    <p>Arquitetura: Mudança que melhora a forma global que programas externos interagem com um banco de dados, por exemplo, substituindo uma operação Java existente, em uma biblioteca, por uma stored procedure armazenada no banco de dados.</p>
-  </li>
-  <li>
-    <p>Métodos: Mudança que melhora a qualidade de métodos, por exemplo, renomeando um procedimento armazenado para torná-lo mais fácil de entender.</p>
-  </li>
-  <li>
-    <p>Transformação sem refactoring: Mudança no esquema de banco de dados que muda a semântica, por exemplo, adicionar uma coluna numa tabela existente.
-<br /></p>
-  </li>
+  <li>Post-its (de preferência 4 cores diferentes) para todos os participantes;</li>
+  <li>Lapis ou canetas; </li>
+  <li>De 40 a 60 minutos;</li>
+  <li>Serão 4 etapas de 10 minutos, sendo 5 para o time escrever e 5 para você ler o que foi escrito.</li>
 </ul>
 
-<h2>Parte 1</h2>
+<h2>Etapa 1: Avaliando os tratamentos passados</h2>
+<p>Na primeira etapa, o médico diria: <strong>"Os rémedios que receitei a você, surtiram efeito? Você se sente melhor?"</strong></p>
+<p> Neste ponto, o time deve escrever se as ações decididas na última retrospectiva foram executadas e qual foi o resultado. Na minha opinião, se nenhuma das ações foram executadas, não há motivos para fazer outra retrospectiva. Deveria usar este tempo para executa-las, mas esta é apenas a minha opinião.</p>
 
-<iframe width="560" height="420" src="http://www.youtube.com/embed/27phqgF6uxI?color=white&amp;theme=light"></iframe>
+<h2>Etapa 2: Sintomas atuais</h2>
+<p> <strong>"Quais sintomas você está sentido agora?"</strong></p>
+<p>Quando se está em tratamento deste tipo, é comum que os remédios tenham efeitos colaterais. Assim como num time ágil onde as mudanças podem ser benéficas ou não. O ponto aqui é avaliar quais problemas o time está enfrentando agora. </p>
 
-<iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src="//www.slideshare.net/slideshow/embed_code/52400960" width="560" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
-<p><br /></p>
+<h2>Etapa 3: Opções de tratamento</h2>
+<p><strong>"Estas são as opções de tratamento"</strong></p>
+<p>Nesta etapa, cada participante deve escrever idéias para sanar os sintomas que o time está sentindo.</p>
 
-<h2>Parte 2</h2>
-<iframe width="560" height="420" src="http://www.youtube.com/embed/zGzhV5o6jwo?color=white&amp;theme=light"></iframe>
+<h2>Etapa 4: Escolhendo o melhor tratamento</h2>
+<p><strong>"Qual tratamento você quer optar?"</strong></p>
+<p>Você já deve ter passado por algum tratamento onde o médico te receitou 2 folhas de remédios com possologias variadas e mais uns 10 exames. Bem não precisa responder, mas você fez tudo certinho? Acredito que não. Então não adianta o time sair com 10 ou 15 ações da restrospectiva e não fazer nenhuma. Na minha opinião, no máximo 3 são o bastante.</p>
+<p>Esta etapa deve levar os 10 minutos finais (ou mais se você optar). Cada membro do time tem 3 votos para dar em quais ações ele considera indispensável. Em seguida, selecione as 3 mais votadas e nomeie responsáveis para cada uma delas.</p>
 
-<iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src="//www.slideshare.net/slideshow/embed_code/53272896" width="560" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
-<p><br /></p>
+<p>Boa sorte!</p>
 
 
 
 
-                <div class="fb-like" data-href="http://rkmael.com/2015/09/28/refactoring-databases/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
+                <div class="fb-like" data-href="http://rkmael.com/2015/09/30/retrospectiva-consulta-medica/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="font-size: 1px;"></div>
 
                 <a href="https://twitter.com/share" class="twitter-share-button" data-via="rkmael">Tweet</a>
 
@@ -199,13 +189,9 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2015/09/04/inove-suas-retrospectivas/" data-toggle="tooltip" data-placement="top" title="Inove suas Retrospectivas">&larr; Previous Post</a> 
+                        <a href="/2015/09/28/refactoring-databases/" data-toggle="tooltip" data-placement="top" title="Refactoring Databases">&larr; Previous Post</a> 
                     </li>
                      
-                    
-                    <li class="next">
-                        <a href="/2015/09/30/retrospectiva-consulta-medica/" data-toggle="tooltip" data-placement="top" title="Retrospectiva Consulta Médica">Next Post &rarr;</a>
-                    </li>
                      
                 </ul>
 
